@@ -1,0 +1,5 @@
+<h1>{{ title }}</h1>
+<button (click)="subscribeToChartData()">SUBSCRIBE</button>
+<button (click)="unsubscribeFromChartData()">UNSUBSCRIBE</button>
+<br>
+<app-line-chart [data]="chartData"></app-line-chart>

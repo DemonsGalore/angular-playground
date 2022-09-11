@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+
+<nav>
+    <ul>
+        <li routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</li>
+        <li routerLink="pokemon" routerLinkActive="active">Pokémon</li>
+        <li routerLink="charts" routerLinkActive="active">Charts</li>
+        <li routerLink="blabla" routerLinkActive="active">Bla Bla</li>
+        <li routerLink="settings" routerLinkActive="active">Settings</li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>

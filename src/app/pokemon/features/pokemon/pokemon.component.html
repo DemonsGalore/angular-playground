@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+
+<p>Built with @ngrx/component-store</p>
+
+<div>
+    <ul *ngIf="pokemonStore.pokemon$ | async as pokemons">
+        <li *ngFor="let pokemon of pokemons" [routerLink]="['/pokemon', pokemon.name]" routerLinkActive="active">
+            {{ pokemon.name }}
+        </li>
+    </ul>
+    <app-pokemon-details [pokemon]="pokemonStore.selectedPokemon$ | async"></app-pokemon-details>
+</div>

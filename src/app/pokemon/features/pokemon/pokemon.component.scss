@@ -1,0 +1,22 @@
+div {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    ul {
+        list-style: none;
+
+        li {
+            padding: 0.25em;
+            cursor: pointer;
+
+            &.active {
+                color: dodgerblue;
+            }
+        }
+    }
+}
+
+p {
+    margin: 0.5em 0;
+}
